@@ -22,17 +22,17 @@ class CrazyController: UIViewController {
             case 0:
                 self.outcomeMessage?.text = "It's a tie!"
             case 1:
-                self.outcomeMessage?.text = "Paper covers rock! You win."
+                self.outcomeMessage?.text = "Your scissor got crushed by rock! Damn..."
             case 2:
-                self.outcomeMessage?.text = "Rock breaks scissor! You win."
+                self.outcomeMessage?.text = "Your paper covers rock. You win!"
             case 3:
-                self.outcomeMessage?.text = "Scissor cuts paper! You win."
+                self.outcomeMessage?.text = "Your rock crushes the scissor. Good job..."
             case 4:
-                self.outcomeMessage?.text = "Your paper got cut by a scissor! You lose."
+                self.outcomeMessage?.text = "Your rock got fucked by paper! You lose."
             case 5:
-                self.outcomeMessage?.text = "Your rock got destroyed by paper! You lose."
+                self.outcomeMessage?.text = "Your paper got cut up by a scissor. You lose."
             case 6:
-                self.outcomeMessage?.text = "Your scissor got crushed by a rock! You lose."
+                self.outcomeMessage?.text = "Your scissor cuts up some paper (and pussies). Ummm."
             default:
                 self.outcomeMessage?.text = "What's poppin?"
             }
