@@ -14,7 +14,7 @@
 		5D3B4E701FF53ABA0015CDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3B4E6E1FF53ABA0015CDFF /* LaunchScreen.storyboard */; };
 		5D3B4E7B1FF53ABB0015CDFF /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B4E7A1FF53ABB0015CDFF /* RoshamboTests.swift */; };
 		5D3B4E861FF53ABB0015CDFF /* RoshamboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B4E851FF53ABB0015CDFF /* RoshamboUITests.swift */; };
-		5D3B4E941FF53C970015CDFF /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B4E931FF53C970015CDFF /* ResultController.swift */; };
+		5D3B4E941FF53C970015CDFF /* CrazyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B4E931FF53C970015CDFF /* CrazyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		5D3B4E811FF53ABB0015CDFF /* RoshamboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3B4E851FF53ABB0015CDFF /* RoshamboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboUITests.swift; sourceTree = "<group>"; };
 		5D3B4E871FF53ABB0015CDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D3B4E931FF53C970015CDFF /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		5D3B4E931FF53C970015CDFF /* CrazyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrazyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 				5D3B4E671FF53ABA0015CDFF /* ChoiceController.swift */,
 				5D3B4E691FF53ABA0015CDFF /* Main.storyboard */,
 				5D3B4E6C1FF53ABA0015CDFF /* Assets.xcassets */,
-				5D3B4E931FF53C970015CDFF /* ResultController.swift */,
+				5D3B4E931FF53C970015CDFF /* CrazyController.swift */,
 				5D3B4E6E1FF53ABA0015CDFF /* LaunchScreen.storyboard */,
 				5D3B4E711FF53ABA0015CDFF /* Info.plist */,
 			);
@@ -266,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D3B4E681FF53ABA0015CDFF /* ChoiceController.swift in Sources */,
-				5D3B4E941FF53C970015CDFF /* ResultController.swift in Sources */,
+				5D3B4E941FF53C970015CDFF /* CrazyController.swift in Sources */,
 				5D3B4E661FF53ABA0015CDFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +518,7 @@
 				5D3B4E8C1FF53ABB0015CDFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D3B4E8D1FF53ABB0015CDFF /* Build configuration list for PBXNativeTarget "RoshamboTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				5D3B4E8F1FF53ABB0015CDFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D3B4E901FF53ABB0015CDFF /* Build configuration list for PBXNativeTarget "RoshamboUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				5D3B4E921FF53ABB0015CDFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
