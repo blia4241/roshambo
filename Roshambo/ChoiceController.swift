@@ -24,23 +24,17 @@ class ChoiceController: UIViewController {
     }
 
     @IBAction func rockabye() {
-        codedValuebyPlayer = 0
-        produceOutcome()
+        produceOutcome(codedValuebyPlayer: 0)
         transitToVC()
         
     }
     
-    func scissorHand() {
-        codedValuebyPlayer = 1
-        produceOutcome()
+    @IBAction func paperTown() {
+        produceOutcome(codedValuebyPlayer: 2)
+        transitToVC()
     }
     
-    func paperTown() {
-        codedValuebyPlayer = 2
-        produceOutcome()
-    }
-    
-    func produceOutcome() {
+    func produceOutcome(codedValuebyPlayer: Int) {
         
         let codedValuebyApp = arc4random_uniform(3)
         switch (codedValuebyPlayer, codedValuebyApp) {
@@ -68,8 +62,8 @@ class ChoiceController: UIViewController {
             outcomeScore = 6
         default:
             outcomeScore = 7
-}
-}
+        }
+    }
     func transitToVC() {
         var controller = CrazyController()
         
@@ -79,6 +73,14 @@ class ChoiceController: UIViewController {
         
         self.present(controller, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! CrazyController
+        produceOutcome(codedValuebyPlayer: 1)
+        controller.score = outcomeScore
+    }
+    
+    @IBAction func showResultMethod() {
+        self.performSegue(withIdentifier: "showResult", sender: self)
+    }
 }
-
-

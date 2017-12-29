@@ -40,4 +40,8 @@ class CrazyController: UIViewController {
             self.outcomeMessage?.text = nil
         }
     }
+    
+    @IBAction func dismiss() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
